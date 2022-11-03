@@ -1,4 +1,5 @@
 # 7773_assignement
+- The website on github is :https://github.com/BeuatyBlackBear/7773_assignement/edit/main/README.md
 ## Task 1:
 * `7773-assignment` is the folder containing the scripts we will described during the class;
 * `requirements.txt` holds the Python dependencies required for running the scripts.
