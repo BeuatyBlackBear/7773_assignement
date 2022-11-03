@@ -5,9 +5,9 @@
 * `requirements.txt` holds the Python dependencies required for running the scripts.
 - `regression_dataset.txt` is a fake regression dataset to run the code - you can generate another dataset with different parameters or cardinality using the `create_fake_dataset.py` script and use the syntax `python create_fake_dataset.py`;
 * `flow.py` contains the script for task one. To run the script, please use the syntax : `COMET_API_KEY=xxx MY_PROJECT_NAME=yyy python flow.py run` with the API key.
-*  `hyperparamters` contains the screenshot on comet to record the best model's parameter.
-*  `metrics` contains the screenshot on comet to record the best model's metrics on validation set (MSE and R2).
-*  `metrics_2` contains the screenshot on comet to record the best model's metrics on test set (MSE and R2).
+*  `hyperparamters.png` contains the screenshot on comet to record the best model's parameter.
+*  `metrics.png` contains the screenshot on comet to record the best model's metrics on validation set (MSE and R2).
+*  `metrics_2.png` contains the screenshot on comet to record the best model's metrics on test set (MSE and R2).
 
 ## Task 2:
 
