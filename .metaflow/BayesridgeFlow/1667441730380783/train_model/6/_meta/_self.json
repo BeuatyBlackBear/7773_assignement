@@ -1,0 +1,1 @@
+{"run_number": "1667441730380783", "step_name": "train_model", "task_id": "6", "flow_id": "BayesridgeFlow", "user_name": "qinyixin", "tags": [], "system_tags": ["metaflow_version:2.5.0", "date:2022-11-03", "user:qinyixin", "python_version:3.9.12", "runtime:dev"], "ts_epoch": 1667441733102}

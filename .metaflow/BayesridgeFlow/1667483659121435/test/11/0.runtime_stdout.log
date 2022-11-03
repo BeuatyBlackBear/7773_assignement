@@ -1,0 +1,2 @@
+[MFLOG|0|2022-11-03T13:54:30.308453Z|runtime|a12f5c39-c843-4eca-9494-d96254e82f3b]Running experiment for project: abc
+[MFLOG|0|2022-11-03T13:54:31.817286Z|runtime|0db97111-08b3-4ac5-acb9-e13fc83206f5]The best model based on test set has MSE : 108.29430152557015, R2 score : 0.7177845240549073

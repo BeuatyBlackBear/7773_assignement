@@ -1,0 +1,31 @@
+[MFLOG|0|2022-10-31T14:42:44.938254Z|runtime|fd518ff5-f0bf-4b9d-817e-0743c037b06a]<flow SVMFlow step train_model[2] (input: 2)> failed:
+[MFLOG|0|2022-10-31T14:42:44.943221Z|runtime|b220984e-fec4-41a2-b8cb-cca75969775b]    Internal error
+[MFLOG|0|2022-10-31T14:42:44.944205Z|runtime|27195326-f54e-4b81-9471-50dd3c8cff7b]Traceback (most recent call last):
+[MFLOG|0|2022-10-31T14:42:44.944558Z|runtime|743bd209-728f-4b54-b646-e26091cd23f1]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-10-31T14:42:44.944882Z|runtime|a7e90396-234b-40ee-ad7c-02dc247fc898]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-10-31T14:42:44.945027Z|runtime|8601a94a-2284-4bfb-94d1-a70431e115a5]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-10-31T14:42:44.945076Z|runtime|801d3836-ad61-4bd9-a17c-b323e3ee4d54]    return self.main(args, kwargs)
+[MFLOG|0|2022-10-31T14:42:44.945119Z|runtime|66092356-94f7-49bd-a4ef-cd587ec265ec]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-10-31T14:42:44.945163Z|runtime|b03608bf-2744-4b00-9a8d-dc451f271180]    rv = self.invoke(ctx)
+[MFLOG|0|2022-10-31T14:42:44.945189Z|runtime|08e80691-cf12-4036-ab19-8f5747a6c2cb]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-10-31T14:42:44.945215Z|runtime|a11db4d3-32aa-421a-b573-b10e1ba4fdf5]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-10-31T14:42:44.945241Z|runtime|529efc30-1428-484d-ac54-2ed441ceb19b]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-10-31T14:42:44.945269Z|runtime|ae9fdb29-fbcb-4c6e-b3b2-2a8a52c1cd73]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-10-31T14:42:45.103942Z|runtime|90e19065-2c0a-4f6b-a5f5-4be88b720915][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2022-10-31T14:42:45.105006Z|runtime|605a1a3c-23aa-4ed6-834b-f47045b624d2]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-10-31T14:42:45.105037Z|runtime|8bba6f37-c796-48a2-93f4-8f8523fd7008]    return __callback(args, kwargs)
+[MFLOG|0|2022-10-31T14:42:45.105061Z|runtime|cbad0fd9-caed-46bf-ad1a-f93b11a101fb]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-10-31T14:42:45.105083Z|runtime|ed5d1130-2fd0-4ec7-92de-938b327d8925]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-10-31T14:42:45.105104Z|runtime|79205f80-2725-44bc-bc68-93f8df2fad96]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-10-31T14:42:45.105126Z|runtime|81dd5c92-6c3b-4f3a-9561-9f646f25b8df]    task.run_step(
+[MFLOG|0|2022-10-31T14:42:45.105147Z|runtime|273defcb-6934-4125-8f61-1c767f78feb2]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 547, in run_step
+[MFLOG|0|2022-10-31T14:42:45.105169Z|runtime|fc767e92-bcef-43a3-83ae-cb6b2a1fc846]    self._exec_step_function(step_func)
+[MFLOG|0|2022-10-31T14:42:45.105190Z|runtime|d4346c64-78e5-4a26-a619-0bf44d9b09d2]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 53, in _exec_step_function
+[MFLOG|0|2022-10-31T14:42:45.105211Z|runtime|79ca57d4-ac2c-487f-90fc-c4108a475450]    step_function()
+[MFLOG|0|2022-10-31T14:42:45.105233Z|runtime|a9f52e20-6e9e-45f5-9bbb-a6023825999f]  File "/Users/qinyixin/Desktop/7773_assignement/flow.py", line 95, in train_model
+[MFLOG|0|2022-10-31T14:42:45.105255Z|runtime|b3cf02c3-af2e-497b-a000-7432eeaa6b2c]    self.scores = cross_val_score(reg, self.Xs, self.ys, cv=6)
+[MFLOG|0|2022-10-31T14:42:45.105276Z|runtime|f2f9fda2-adb7-4214-8f7e-7e29f25530de]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/flowspec.py", line 223, in __getattr__
+[MFLOG|0|2022-10-31T14:42:45.105298Z|runtime|958a5d64-6876-40e0-b487-04e8100a8cd4]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2022-10-31T14:42:45.105320Z|runtime|1ccdefc3-15b1-41e6-881c-06a6073d6fee]AttributeError: Flow SVMFlow has no attribute 'ys'
+[MFLOG|0|2022-10-31T14:42:45.105341Z|runtime|93da0bcd-ad79-47ff-b956-3eef02064b28]
+[MFLOG|0|2022-10-31T14:42:45.105446Z|runtime|1917b205-28d0-43b7-9247-8e42283a369a]Task failed.

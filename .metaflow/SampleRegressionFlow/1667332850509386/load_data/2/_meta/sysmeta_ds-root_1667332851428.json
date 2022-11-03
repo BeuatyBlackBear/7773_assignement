@@ -1,0 +1,1 @@
+{"flow_id": "SampleRegressionFlow", "run_number": "1667332850509386", "step_name": "load_data", "task_id": "2", "field_name": "ds-root", "type": "ds-root", "value": "/Users/qinyixin/Desktop/7773_assignement/.metaflow", "tags": ["attempt_id:0"], "user_name": "qinyixin", "ts_epoch": 1667332851428}

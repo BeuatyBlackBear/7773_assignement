@@ -1,0 +1,46 @@
+[MFLOG|0|2022-10-31T14:54:43.567784Z|runtime|c027449d-ab57-40da-b0b2-3309e28369dc]COMET INFO: Experiment is live on comet.ml https://www.comet.com/beuatyblackbear/7773-assignment-4/a29240e6ba9c4909af2c351021cc46f9
+[MFLOG|0|2022-10-31T14:54:43.759655Z|runtime|df0f99a7-fa23-4906-8322-b31b1e6a44dc]
+[MFLOG|0|2022-10-31T14:54:43.759779Z|runtime|4b08b4d5-c938-4c63-84d8-dcfe74f18d67]<flow SVMFlow step join> failed:
+[MFLOG|0|2022-10-31T14:54:43.763610Z|runtime|afc8149d-d3a6-4f8b-94fa-c34560fcf833]    Internal error
+[MFLOG|0|2022-10-31T14:54:43.763840Z|runtime|a5ad73c1-409b-40f4-80d0-05d4083c7700]Traceback (most recent call last):
+[MFLOG|0|2022-10-31T14:54:43.763945Z|runtime|f7d72db5-c5da-4eff-a162-cf20da6ac292]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-10-31T14:54:43.763983Z|runtime|d9bb8aa5-d907-44f6-8391-5f5a725097bb]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-10-31T14:54:43.764059Z|runtime|4071dde3-a3a7-473c-a016-96578d0c0fcf]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-10-31T14:54:43.764101Z|runtime|048055ec-48bd-4e90-85c0-558d14dde822]    return self.main(args, kwargs)
+[MFLOG|0|2022-10-31T14:54:43.764151Z|runtime|5cb63881-1cdb-4b3b-afcf-0893e1d473eb]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-10-31T14:54:43.764186Z|runtime|73f60a8a-b6e8-4c81-a457-4c5d366bf9c2]    rv = self.invoke(ctx)
+[MFLOG|0|2022-10-31T14:54:43.764266Z|runtime|de9f43f2-9b7b-4d4a-b133-4f7410cc8b05]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-10-31T14:54:43.764319Z|runtime|413f607e-20dd-44fb-b689-6b4ebf117d25]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-10-31T14:54:43.764352Z|runtime|1bf61df3-525a-4830-8e16-9a73fa987d12]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-10-31T14:54:43.764384Z|runtime|28a2fad6-8b1e-4edc-a1b9-5ace13fc2054]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-10-31T14:54:43.764410Z|runtime|c15f4233-d306-4ff5-83ef-9c4a897f0041]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-10-31T14:54:43.764436Z|runtime|a7933106-1852-4aa3-aa22-1a99e2b4d836]    return __callback(args, kwargs)
+[MFLOG|0|2022-10-31T14:54:43.764461Z|runtime|9a749a92-a3b4-4da2-a0c4-788bfe5739b4]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-10-31T14:54:43.764487Z|runtime|669cb81c-5cef-4360-94d8-9e4cd71d9201]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-10-31T14:54:43.764511Z|runtime|5272a73e-1cb1-409d-a01d-b68dc0956f1b]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-10-31T14:54:43.764535Z|runtime|7118fead-a887-4f5c-a5f6-acf432bbf6e7]    task.run_step(
+[MFLOG|0|2022-10-31T14:54:43.764561Z|runtime|4097db5c-ab35-4ea7-b79a-f004aeaa3757]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 545, in run_step
+[MFLOG|0|2022-10-31T14:54:43.764586Z|runtime|bc29c9dd-5856-4995-b6f0-e0132d921687]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2022-10-31T14:54:43.764610Z|runtime|44b87763-03bb-424f-9f3e-c309821304ac]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 55, in _exec_step_function
+[MFLOG|0|2022-10-31T14:54:43.764639Z|runtime|c33b6e93-fe05-47de-b0f9-5bcc9555f9e9]    step_function(input_obj)
+[MFLOG|0|2022-10-31T14:54:43.764664Z|runtime|23f8a9ec-7d47-437f-ab2f-2e6d54d95ce4]  File "/Users/qinyixin/Desktop/7773_assignement/flow.py", line 116, in join
+[MFLOG|0|2022-10-31T14:54:43.764689Z|runtime|8aa1ae82-14ac-40e8-9443-5cdbc6174867]    for i in len(self.results):
+[MFLOG|0|2022-10-31T14:54:43.764713Z|runtime|d33ba007-50e3-4a43-b5e9-37a78426c308]TypeError: 'int' object is not iterable
+[MFLOG|0|2022-10-31T14:54:43.764740Z|runtime|10d1e5b6-e265-44bc-bf93-f130fd82a2e4]
+[MFLOG|0|2022-10-31T14:54:43.764764Z|runtime|abaf152d-52ab-4210-a61e-778a476811a7]COMET INFO: ---------------------------
+[MFLOG|0|2022-10-31T14:54:44.433527Z|runtime|5ef29bfb-241e-4a5b-85e5-de16f598d37f]COMET INFO: Comet.ml Experiment Summary
+[MFLOG|0|2022-10-31T14:54:44.433924Z|runtime|711cb129-2ccc-4d6d-8211-0e51f792228b]COMET INFO: ---------------------------
+[MFLOG|0|2022-10-31T14:54:44.434028Z|runtime|06889d5b-8672-4477-89ce-8e5047a89ffe]COMET INFO:   Data:
+[MFLOG|0|2022-10-31T14:54:44.434124Z|runtime|837bd00a-4294-49fa-91bb-da006fbce9ae]COMET INFO:     display_summary_level : 1
+[MFLOG|0|2022-10-31T14:54:44.434216Z|runtime|35fb2c02-9cf6-4689-acc1-b0c1955639c9]COMET INFO:     url                   : https://www.comet.com/beuatyblackbear/7773-assignment-4/a29240e6ba9c4909af2c351021cc46f9
+[MFLOG|0|2022-10-31T14:54:44.434309Z|runtime|1a322155-54fa-49a2-b9de-3e19f61ef8b2]COMET INFO:   Uploads:
+[MFLOG|0|2022-10-31T14:54:44.434397Z|runtime|6d48452a-8b52-4f35-8648-d042181af102]COMET INFO:     environment details : 1
+[MFLOG|0|2022-10-31T14:54:44.434484Z|runtime|543ecb57-492a-44f0-9034-727645526311]COMET INFO:     filename            : 1
+[MFLOG|0|2022-10-31T14:54:44.434582Z|runtime|929716d2-c602-4b9b-abf2-71219bdf913a]COMET INFO:     git metadata        : 1
+[MFLOG|0|2022-10-31T14:54:44.434674Z|runtime|505d03d2-0f56-45d5-9037-37d07b043985]COMET INFO:     installed packages  : 1
+[MFLOG|0|2022-10-31T14:54:44.434869Z|runtime|f393cb5a-46ae-47d3-bd08-b01a41dc2499]COMET INFO:     source_code         : 1 (3.92 KB)
+[MFLOG|0|2022-10-31T14:54:44.434977Z|runtime|582daefe-f535-4334-a40f-37d10a4b8a37]COMET INFO: ---------------------------
+[MFLOG|0|2022-10-31T14:54:44.435075Z|runtime|1a856674-390f-4d45-8687-14578b8b1fe6]COMET INFO: Uploading metrics, params, and assets to Comet before program termination (may take several seconds)
+[MFLOG|0|2022-10-31T14:54:45.433880Z|runtime|5339a143-feb9-4526-8d9b-52035e8bbc74]COMET INFO: The Python SDK has 3600 seconds to finish before aborting...
+[MFLOG|0|2022-10-31T14:54:45.434025Z|runtime|2772bf58-0991-4ae2-9d11-3afe7cd7a020]COMET INFO: Uploading 1 metrics, params and output messages
+[MFLOG|0|2022-10-31T14:54:45.434457Z|runtime|a2fe6588-a6ee-4595-b975-339d929ab0fd]Task failed.

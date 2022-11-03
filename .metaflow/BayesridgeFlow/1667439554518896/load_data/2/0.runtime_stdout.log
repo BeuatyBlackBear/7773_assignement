@@ -1,0 +1,3 @@
+[MFLOG|0|2022-11-03T01:39:15.304819Z|runtime|6dba27b9-62ff-4ed3-9ab4-ab654732c767]Running experiment for project: ss
+[MFLOG|0|2022-11-03T01:39:15.507649Z|runtime|efe17346-936c-4d0d-9bfc-362266ba6a7f]Total of 1000 rows in the dataset!
+[MFLOG|0|2022-11-03T01:39:15.508302Z|runtime|0aa89a9d-a7d7-4b4f-9c99-a13d2649c434]Raw data: -1.7587394864231143	-32.770386047959725, cleaned data: [-1.7587394864231143, -32.770386047959725]

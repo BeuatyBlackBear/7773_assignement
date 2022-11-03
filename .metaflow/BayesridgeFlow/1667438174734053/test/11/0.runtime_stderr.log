@@ -1,0 +1,77 @@
+[MFLOG|0|2022-11-03T01:16:26.164363Z|runtime|e51e36c7-7ab9-458d-8d46-7babb400a5d9]<flow BayesridgeFlow step test> failed:
+[MFLOG|0|2022-11-03T01:16:26.169735Z|runtime|99279960-d79a-489a-8af6-c615f762d217]    Internal error
+[MFLOG|0|2022-11-03T01:16:26.170279Z|runtime|1a9c36c8-5e5a-4e7d-9911-e4a7f0063e38]Traceback (most recent call last):
+[MFLOG|0|2022-11-03T01:16:26.170324Z|runtime|0e02664f-9940-4811-9050-5b5eb87673c9]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-11-03T01:16:26.170402Z|runtime|53a8e18e-0aa3-43ad-971e-0c52312ad77a]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-11-03T01:16:26.170434Z|runtime|35add07a-2c62-4cb0-9c1d-4c7f147ac5ff]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-11-03T01:16:26.170492Z|runtime|081d3393-2213-46a9-9f57-91dbb4f9380a]    return self.main(args, kwargs)
+[MFLOG|0|2022-11-03T01:16:26.170542Z|runtime|bacc1dd1-6b6e-4684-ae6c-87296ff82feb]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-11-03T01:16:26.170568Z|runtime|764551fc-9ab0-4f3b-bcf9-3b5bad9093cc]    rv = self.invoke(ctx)
+[MFLOG|0|2022-11-03T01:16:26.170594Z|runtime|0d7d3d04-3f7e-49a8-8179-6d9049c62289]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-11-03T01:16:26.170621Z|runtime|b0d6186b-56b1-491b-9856-029fbcf13654]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-11-03T01:16:26.170647Z|runtime|0e401204-a5c4-48e3-8e81-66ff90df8d15]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-11-03T01:16:26.170671Z|runtime|f0362cc2-b238-41da-a5b2-ad01f8f2437d]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-11-03T01:16:26.170695Z|runtime|3cbbba5e-042b-4d76-9313-922bdcfd5096]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-11-03T01:16:26.170721Z|runtime|50292f38-84d8-4aa7-8cd1-20a94f249a85]    return __callback(args, kwargs)
+[MFLOG|0|2022-11-03T01:16:26.270944Z|runtime|f7faf040-ed3b-4945-8e6d-47e239265b6b]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-11-03T01:16:26.271130Z|runtime|049f0180-a25a-43e1-b28a-857989932c16]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-11-03T01:16:26.271164Z|runtime|4c88c6ba-6756-40c5-a82e-d96466951719]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-11-03T01:16:26.271189Z|runtime|6f983ba1-f985-4b46-9112-354aba606a11]    task.run_step(
+[MFLOG|0|2022-11-03T01:16:26.271212Z|runtime|fd5ab14f-24f9-4ff7-94bf-d60071a6f19b]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 547, in run_step
+[MFLOG|0|2022-11-03T01:16:26.271234Z|runtime|a7835135-3a49-4737-949d-814140a910bf]    self._exec_step_function(step_func)
+[MFLOG|0|2022-11-03T01:16:26.271256Z|runtime|f8718b7a-90a0-4ba5-9945-90dd96bbe743]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 53, in _exec_step_function
+[MFLOG|0|2022-11-03T01:16:26.271278Z|runtime|504f99f3-bad8-4563-889f-fc48423c4042]    step_function()
+[MFLOG|0|2022-11-03T01:16:26.271300Z|runtime|93025daa-e166-4195-a3e3-4c2316b8f574]  File "/Users/qinyixin/Desktop/7773_assignement/flow_3.py", line 178, in test
+[MFLOG|0|2022-11-03T01:16:26.271323Z|runtime|cee0c052-1a57-47dc-9942-80ab0b60534d]    self.y_test_predicted = self.model.predict(self.y_test)
+[MFLOG|0|2022-11-03T01:16:26.271345Z|runtime|2308328d-c494-46bf-ae79-c9ec74661336]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/sklearn/linear_model/_bayes.py", line 362, in predict
+[MFLOG|0|2022-11-03T01:16:26.271366Z|runtime|564ba946-62d1-4488-92e1-d24107bacbe5]    y_mean = self._decision_function(X)
+[MFLOG|0|2022-11-03T01:16:26.271390Z|runtime|00b295f1-92bb-47a4-b945-8971a86c7ba7]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/sklearn/linear_model/_base.py", line 345, in _decision_function
+[MFLOG|0|2022-11-03T01:16:26.271413Z|runtime|dfb6eebe-801a-47a3-bbda-7b3092c45df3]    X = self._validate_data(X, accept_sparse=["csr", "csc", "coo"], reset=False)
+[MFLOG|0|2022-11-03T01:16:26.271435Z|runtime|4f2e1cfd-c249-463c-bd42-ae9dde94d071]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/sklearn/base.py", line 566, in _validate_data
+[MFLOG|0|2022-11-03T01:16:26.271457Z|runtime|573f9f41-f9c6-40a1-affa-84476a855d10]    X = check_array(X, check_params)
+[MFLOG|0|2022-11-03T01:16:26.271479Z|runtime|cabac67f-a43b-4fc5-8be4-c0e0dce4a3db]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/sklearn/utils/validation.py", line 769, in check_array
+[MFLOG|0|2022-11-03T01:16:26.271501Z|runtime|6f907b58-cc8e-482a-878a-076182a7fbd7]    raise ValueError(
+[MFLOG|0|2022-11-03T01:16:26.271522Z|runtime|11a507c4-7ce5-4916-9a7e-76add19c98b2]ValueError: Expected 2D array, got 1D array instead:
+[MFLOG|0|2022-11-03T01:16:26.271543Z|runtime|6370ee44-c2db-4b28-bffe-7cb3a14153b8]array=[ 29.08735461   3.19912938  30.910198   -11.56476022 -27.81746163
+[MFLOG|0|2022-11-03T01:16:26.271567Z|runtime|67e9168e-1f05-4005-8633-3d3c2912d1a8]  -3.23701757   8.19443864  18.66582197   3.56996967 -20.49385448
+[MFLOG|0|2022-11-03T01:16:26.271589Z|runtime|53e43c76-dab8-49b6-b6eb-161f55ac9ee8] -24.75502249  23.54324037  17.19256077  35.65210074 -15.60191008
+[MFLOG|0|2022-11-03T01:16:26.271611Z|runtime|12501322-5aa0-4f2d-bdfb-facb4244c300]  12.79220136   0.27004504   1.59035645 -25.34551568  17.92492356
+[MFLOG|0|2022-11-03T01:16:26.271632Z|runtime|8598549a-2715-4f3e-a8e5-0e364deec307]  18.17042673 -18.58484533   3.99485453 -19.27381114  -6.98937569
+[MFLOG|0|2022-11-03T01:16:26.271653Z|runtime|d115fc33-fd74-4951-96c3-3dd122236838]   1.31908868  -4.51688631  19.93588042  22.52011582  -6.58952529
+[MFLOG|0|2022-11-03T01:16:26.271674Z|runtime|64b5c526-7e47-4102-9ffd-021366e4b3f2]  35.74125534  -0.18328652  -9.02154286  -6.60256461  -5.68317167
+[MFLOG|0|2022-11-03T01:16:26.271695Z|runtime|5ace6860-fde5-43fe-83df-f1eddb38effc] -26.73082323  11.62223218 -10.38468226  33.94661649 -27.11516609
+[MFLOG|0|2022-11-03T01:16:26.271716Z|runtime|b0352cfe-ac29-40fb-8978-039d3f7fca29] -11.66172297  -0.42963368 -17.94296545  20.52039139 -15.01034038
+[MFLOG|0|2022-11-03T01:16:26.271736Z|runtime|3704fbbf-b088-4d1c-916a-1c01eee08f33] -20.55088308 -32.74523715   9.53066801 -10.79780841   0.10497435
+[MFLOG|0|2022-11-03T01:16:26.271758Z|runtime|714b12b7-02b5-4409-a1fe-73d1ed28a6bb]  -4.53608855 -23.75872508  20.3137572   -9.56916763   9.94439327
+[MFLOG|0|2022-11-03T01:16:26.271778Z|runtime|68d1fab1-9671-4c59-bc9a-2e4cb9874de1] -11.90647001  13.23483434  37.72993369  41.5092115    3.7881518
+[MFLOG|0|2022-11-03T01:16:26.271804Z|runtime|24f1ab5b-8026-49ae-830c-eebe78f22f5f] -17.48416386 -28.61971955  -1.46650173  18.57076764 -10.36636156
+[MFLOG|0|2022-11-03T01:16:26.271825Z|runtime|2aa0fa68-184f-4b8f-b164-dad2446a0e56]   1.23745412  -7.3720402   32.28435422 -10.57707417  25.5310466
+[MFLOG|0|2022-11-03T01:16:26.271846Z|runtime|e4e36088-c8bf-40a9-8d51-d59c919a6dc7]  -7.6862997  -43.07278788  22.80973364 -25.7733881   33.74974958
+[MFLOG|0|2022-11-03T01:16:26.271867Z|runtime|27f1d9b2-adf0-4dde-a022-2c803fd34f15]  -1.63129383   3.74862844 -21.13705569 -24.48246334  16.48842423
+[MFLOG|0|2022-11-03T01:16:26.271888Z|runtime|94cd5d9d-ab62-460b-81d1-23715352bc94]   5.36230835  19.99069851 -15.34879746  -3.8438903   21.15844152
+[MFLOG|0|2022-11-03T01:16:26.271910Z|runtime|57f6e8c8-e01a-4868-9b76-1b63434fe088]  -6.79797331  37.35780255   4.65542992 -23.82903807 -23.60852828
+[MFLOG|0|2022-11-03T01:16:26.271930Z|runtime|91d60c14-99d2-419c-b0fd-07e2c2690bdc]  -5.90307842  27.76981015  -7.99031271  16.31603396   6.61028431
+[MFLOG|0|2022-11-03T01:16:26.271951Z|runtime|f13694b2-8faf-45ac-8bb6-931f5485ead2]  37.06732517 -41.3101496   25.91835801 -29.3166234   -5.95872845
+[MFLOG|0|2022-11-03T01:16:26.271972Z|runtime|34e48852-d773-4ed7-a8e3-dbeed95be41a]  -1.7811141  -11.35835796  -2.00000852   3.54267286 -21.79476255
+[MFLOG|0|2022-11-03T01:16:26.271994Z|runtime|ff8d6d95-af9d-47c8-aa51-23c517c82ae7]  22.06716925  23.11918193  11.51896535  37.06248792  15.15101515
+[MFLOG|0|2022-11-03T01:16:26.272014Z|runtime|a0b2eafd-7871-493f-aa59-398105b4f7a7]  21.17180748   8.61917555  15.9655511   19.63826077 -23.20594787
+[MFLOG|0|2022-11-03T01:16:26.272035Z|runtime|e139d5ed-0df1-4d6c-85f3-06e910b365ab] -13.26798027   7.87164038  -5.14184967 -19.01983199  12.54198903
+[MFLOG|0|2022-11-03T01:16:26.272057Z|runtime|373d3817-3502-49c9-b58c-85002d1df44d]   5.09382567 -19.47180066  23.14595474   3.69058615  31.2889409
+[MFLOG|0|2022-11-03T01:16:26.272078Z|runtime|68e9854b-f875-4f08-9e11-108949b4de49] -34.9696352    0.36601071  -1.07215542 -14.59391569  24.56015929
+[MFLOG|0|2022-11-03T01:16:26.272099Z|runtime|370fdc2d-e20c-4d12-827a-b2af7c661e92]   5.73928661   8.3125139   22.75437792 -22.5064205   16.64702481
+[MFLOG|0|2022-11-03T01:16:26.272123Z|runtime|588a0889-b34f-44cd-a58b-3814f028dd62]   5.22200192  -1.84187402   5.53212409  -7.39208241  13.16534952
+[MFLOG|0|2022-11-03T01:16:26.272144Z|runtime|64bfb2ae-cf94-4ad2-a3dd-167e959f76f9]  -9.74097045   4.04711599 -18.8409448   -2.60153057   1.07760876
+[MFLOG|0|2022-11-03T01:16:26.272165Z|runtime|4d98beda-a26a-4b11-bb56-cdc775a63e19]  35.13101262  -9.19561532   5.12753929 -41.14548764 -11.29844158
+[MFLOG|0|2022-11-03T01:16:26.272187Z|runtime|6ce20a75-8528-4f7b-b9a8-f4c3c2e9c3b7]   8.86382246  14.66579572   4.45750765  -3.61718413  -5.99269654
+[MFLOG|0|2022-11-03T01:16:26.272208Z|runtime|a9b4d320-890c-4e60-8bfc-2be7f2df8d8c]   1.91055657 -15.2720873   46.27629327   6.41438128 -28.19395376
+[MFLOG|0|2022-11-03T01:16:26.272229Z|runtime|4a87c1a3-67ef-4c27-a7bc-a3f98c266c2f]  -3.73327747  53.42474041 -30.02696789  33.1581779  -19.64086952
+[MFLOG|0|2022-11-03T01:16:26.272250Z|runtime|0c16b127-a0df-4a26-a10d-7e3084a85316]  10.2364328    5.77100508  28.07001361  -4.29334051   0.85080914
+[MFLOG|0|2022-11-03T01:16:26.272271Z|runtime|42afc357-8371-40e3-9033-2f7635ea9de5] -24.62705124 -26.12249416 -16.54337141   1.02222915  -4.4466888
+[MFLOG|0|2022-11-03T01:16:26.272292Z|runtime|1fb53504-ef9e-42be-8157-97b45eacd8cd]  25.16310876  -4.36260445  19.04216632  20.86852753 -48.96083102
+[MFLOG|0|2022-11-03T01:16:26.272313Z|runtime|74200886-19a3-4c8a-8662-4b15f1a805a1]   1.99173147 -10.90343055  12.17316357  -8.8421391   26.13769556
+[MFLOG|0|2022-11-03T01:16:26.272334Z|runtime|2ba323ca-4f92-42da-bf93-065723a97e70] -31.52732     32.90563619   0.75302366  -4.74764885   6.59538448
+[MFLOG|0|2022-11-03T01:16:26.272355Z|runtime|b1250268-0db4-40a3-b064-bf2173917180]  32.07499596 -34.06052657 -24.68275665  -3.41293358 -19.65176283
+[MFLOG|0|2022-11-03T01:16:26.272375Z|runtime|7a66fb1e-6863-420a-959e-1d2d2792cb90]   1.53223698   3.46426911   1.40327918  10.41489127   7.72493743].
+[MFLOG|0|2022-11-03T01:16:26.272396Z|runtime|cb6d4bbe-d9f1-4f99-acf8-6c8bcd8b2f9b]Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+[MFLOG|0|2022-11-03T01:16:26.272431Z|runtime|046d96af-23ce-4dd5-8281-391477f411e6]
+[MFLOG|0|2022-11-03T01:16:26.272848Z|runtime|eb0eff9a-9e0f-465f-9abe-6a7163331628]Task failed.

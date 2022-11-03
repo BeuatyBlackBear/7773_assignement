@@ -1,0 +1,30 @@
+[MFLOG|0|2022-11-03T00:54:33.623883Z|runtime|3d1cf2e0-e6fa-49c4-a14a-182375ff9e61]<flow BayesridgeFlow step test> failed:
+[MFLOG|0|2022-11-03T00:54:33.627413Z|runtime|f49abc4c-2f7d-42a1-a063-594c35a8ee96]    Internal error
+[MFLOG|0|2022-11-03T00:54:33.627907Z|runtime|557d86bf-271c-49a7-b2bc-3ee882eaea62]Traceback (most recent call last):
+[MFLOG|0|2022-11-03T00:54:33.627953Z|runtime|e583c72a-ece9-4aba-bc12-cf79c724fbac]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-11-03T00:54:33.628009Z|runtime|0ce97331-75f6-4f62-a415-114c8fa8558b]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-11-03T00:54:33.628044Z|runtime|950821bb-ed8e-44cd-b07b-419f0f3d2f50]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-11-03T00:54:33.628072Z|runtime|22fac329-30ff-4eaa-b088-0aa486bd4d5c]    return self.main(args, kwargs)
+[MFLOG|0|2022-11-03T00:54:33.628103Z|runtime|74241830-70e7-4a9e-b4b4-2648e8020d79]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-11-03T00:54:33.628128Z|runtime|144811a9-5394-4607-98da-bc05c110a84b]    rv = self.invoke(ctx)
+[MFLOG|0|2022-11-03T00:54:33.628153Z|runtime|403217ca-e590-4914-a381-acbb2f0c83bd]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-11-03T00:54:33.628182Z|runtime|04246ed0-1de2-4e74-a16a-20579a9e15f0]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-11-03T00:54:33.628207Z|runtime|07dbeb73-2dda-4b14-b014-9872b11584e4]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-11-03T00:54:33.628231Z|runtime|bf0fad50-5ad8-4a6b-8a35-47c903b8a1bb]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-11-03T00:54:33.628256Z|runtime|09573a1f-54a3-4038-af30-c25467f92732]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-11-03T00:54:33.628286Z|runtime|5906f1bf-fcde-4771-80ba-e22af2337835]    return __callback(args, kwargs)
+[MFLOG|0|2022-11-03T00:54:33.720676Z|runtime|b42179ad-e54c-4a0f-8e6e-64d6c42eb44f]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-11-03T00:54:33.720845Z|runtime|9f3aef17-ec5c-417f-b7a6-219c52dace10]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-11-03T00:54:33.720877Z|runtime|39e049b8-d9be-45f5-ab79-94135473feca]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-11-03T00:54:33.720903Z|runtime|b34381c8-08ea-4e65-97f9-7079f0ceaf7b]    task.run_step(
+[MFLOG|0|2022-11-03T00:54:33.720926Z|runtime|17242d4f-84a6-40a6-a3d9-229e1bee4988]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 545, in run_step
+[MFLOG|0|2022-11-03T00:54:33.720949Z|runtime|c52dec85-1efa-45c4-b3ac-f454194ba16a]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2022-11-03T00:54:33.720971Z|runtime|17751d4d-6afb-4dfc-b470-2d59e5b4284c]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 55, in _exec_step_function
+[MFLOG|0|2022-11-03T00:54:33.720993Z|runtime|6ddc8e28-4fc0-4b4d-9447-fbd3d077169a]    step_function(input_obj)
+[MFLOG|0|2022-11-03T00:54:33.721016Z|runtime|31e0b6c2-1f41-42d9-a06c-c31f6bf439c6]  File "/Users/qinyixin/Desktop/7773_assignement/flow_3.py", line 135, in test
+[MFLOG|0|2022-11-03T00:54:33.721038Z|runtime|59a5ef6c-7c7b-488e-91ed-f3077c9122a6]    self.mse = metrics.mean_squared_error(self.y_vali, self.y_predicted)
+[MFLOG|0|2022-11-03T00:54:33.721060Z|runtime|3a794641-ccc7-4d40-8bba-c082f260b00a]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/flowspec.py", line 223, in __getattr__
+[MFLOG|0|2022-11-03T00:54:33.721082Z|runtime|c7a980cc-639c-4fb5-9f50-ff27c63a879e]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2022-11-03T00:54:33.721104Z|runtime|6532d361-1450-43f5-ae22-ecbd72d239b7]AttributeError: Flow BayesridgeFlow has no attribute 'y_vali'
+[MFLOG|0|2022-11-03T00:54:33.721132Z|runtime|1f582e1a-3050-4fc3-9441-ce1a62c4b092]
+[MFLOG|0|2022-11-03T00:54:33.721547Z|runtime|71de0fb3-084e-475f-9064-fcae84eabb86]Task failed.

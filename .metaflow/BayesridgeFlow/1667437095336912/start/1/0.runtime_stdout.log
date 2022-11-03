@@ -1,0 +1,5 @@
+[MFLOG|0|2022-11-03T00:58:15.576533Z|runtime|6ed1a6f9-22f5-4c29-8144-56b6f0137855]Running experiment for project: ss
+[MFLOG|0|2022-11-03T00:58:15.810315Z|runtime|6151d31a-991a-4549-9384-fe06dce1674b]Starting up at 2022-11-03 00:58:15.810246
+[MFLOG|0|2022-11-03T00:58:15.878137Z|runtime|b03ad9e5-9ff2-41d2-948a-17631f28a54b]flow name: BayesridgeFlow
+[MFLOG|0|2022-11-03T00:58:15.878244Z|runtime|54fabf8f-d4ff-4602-af4c-00edfd0dad7f]run id: 1667437095336912
+[MFLOG|0|2022-11-03T00:58:15.878281Z|runtime|d85bc864-afe6-43d3-acc4-8b5e1cbd05a7]username: qinyixin

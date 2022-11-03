@@ -1,0 +1,64 @@
+[MFLOG|0|2022-11-01T19:40:20.232209Z|runtime|a97e2548-8d0a-40ff-8c04-c7376e519362]COMET INFO: Experiment is live on comet.com https://www.comet.com/beuatyblackbear/ss/a9712ca59fd4482f91c6cb1e01e906e4
+[MFLOG|0|2022-11-01T19:40:20.234357Z|runtime|5e1edba0-27ef-4c46-a0c9-80c3c143fe6e]
+[MFLOG|0|2022-11-01T19:40:20.234448Z|runtime|bc218418-ee99-434f-ac03-1b90bd69c67d]    Internal error
+[MFLOG|0|2022-11-01T19:40:20.235000Z|runtime|2c6f2ace-272e-4eeb-840e-d6bcaf424d0c]Traceback (most recent call last):
+[MFLOG|0|2022-11-01T19:40:20.235152Z|runtime|9fc94b61-7f3d-470b-b085-8d70cabdb388]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-11-01T19:40:20.235191Z|runtime|102b1fb2-cac0-46d1-bf2f-84ca05f8197c]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-11-01T19:40:20.235219Z|runtime|73ae7f57-078b-49bc-a7d8-1f85b496f9ca]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-11-01T19:40:20.235249Z|runtime|4c456f2d-44b8-4c4e-93bb-908d8603bdc9]    return self.main(args, kwargs)
+[MFLOG|0|2022-11-01T19:40:20.235294Z|runtime|5339843c-d2d1-4bda-a88f-e60395f49be2]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-11-01T19:40:20.235344Z|runtime|572a5bec-1c86-458d-a57b-0bd1d179c27a]    rv = self.invoke(ctx)
+[MFLOG|0|2022-11-01T19:40:20.235375Z|runtime|d9411d11-1643-4231-94d1-9f75c20a3d85]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-11-01T19:40:20.235403Z|runtime|382ee502-61d6-4efd-ada0-f82b4af955c0]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-11-01T19:40:20.235430Z|runtime|a119c4bd-331b-4300-a36f-5a92e44e573f]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-11-01T19:40:20.235455Z|runtime|4c035237-bd40-4b33-9ceb-14340829dac2]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-11-01T19:40:20.235479Z|runtime|c9401542-8a13-49cd-b5c4-566603d2f42e]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-11-01T19:40:20.235503Z|runtime|760c08bc-de31-40e9-9cf0-ead5e3cace34]    return __callback(args, kwargs)
+[MFLOG|0|2022-11-01T19:40:20.235530Z|runtime|1aa58203-f41c-461e-a4c8-fd6f737cebc4]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-11-01T19:40:20.235555Z|runtime|002e7b3c-20ce-4068-897e-17b3dd8eec27]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-11-01T19:40:20.235580Z|runtime|c6b3afac-5f46-4b16-9f40-ef29dc83f351]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-11-01T19:40:20.235605Z|runtime|6d03dee7-ff7d-4725-a616-3094674287d2]    task.run_step(
+[MFLOG|0|2022-11-01T19:40:20.235629Z|runtime|01f279d5-ecae-4f40-9bd4-bd4904c44c49]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 625, in run_step
+[MFLOG|0|2022-11-01T19:40:20.235686Z|runtime|0df8dee9-3e10-4b97-b838-0e6583a4dce1]    output.persist(self.flow)
+[MFLOG|0|2022-11-01T19:40:20.235737Z|runtime|1f4ae2fa-ebb2-4dfc-a399-b2cee1cbbdc5]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/task_datastore.py", line 29, in method
+[MFLOG|0|2022-11-01T19:40:20.235772Z|runtime|91824b75-ef4c-425f-932c-d1d8ddfcdd8e]    return f(self, args, kwargs)
+[MFLOG|0|2022-11-01T19:40:23.800801Z|runtime|f3a2d61c-2873-4beb-b307-71a1877a10fb]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/task_datastore.py", line 43, in method
+[MFLOG|0|2022-11-01T19:40:23.800907Z|runtime|6ff26aa7-42aa-486d-85f9-8b4524d7a297]    return f(self, args, kwargs)
+[MFLOG|0|2022-11-01T19:40:23.800942Z|runtime|09bb714b-f233-4af4-9f22-2552c5490f6e]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/task_datastore.py", line 714, in persist
+[MFLOG|0|2022-11-01T19:40:23.800982Z|runtime|43c37b54-8db2-4cf4-83ce-6fae253b2f99]    self.save_artifacts(artifacts_iter(), len_hint=len(valid_artifacts))
+[MFLOG|0|2022-11-01T19:40:23.801009Z|runtime|0d6ddda6-3ebb-46b4-8024-976c5570bd3a]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/task_datastore.py", line 29, in method
+[MFLOG|0|2022-11-01T19:40:23.801034Z|runtime|b27aeee9-8d86-4736-89e5-4b4a20da33cd]    return f(self, args, kwargs)
+[MFLOG|0|2022-11-01T19:40:23.801059Z|runtime|591f5780-88be-47f6-bd31-2626913b09bb]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/task_datastore.py", line 43, in method
+[MFLOG|0|2022-11-01T19:40:23.801084Z|runtime|ca8761a5-5d16-4746-af82-37bcbcafa9f7]    return f(self, args, kwargs)
+[MFLOG|0|2022-11-01T19:40:23.801111Z|runtime|c2721250-d0dd-4162-8b92-c3f8f151adc4]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/task_datastore.py", line 306, in save_artifacts
+[MFLOG|0|2022-11-01T19:40:23.801136Z|runtime|5a1bd4ab-dac7-4f77-8acb-8a69f244fd77]    save_result = self._ca_store.save_blobs(pickle_iter(), len_hint=len_hint)
+[MFLOG|0|2022-11-01T19:40:23.801161Z|runtime|683dc8f4-6fc9-4087-8a87-d42919f47b07]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/content_addressed_store.py", line 100, in save_blobs
+[MFLOG|0|2022-11-01T19:40:23.801185Z|runtime|5d406434-d99f-46a2-b8c2-b5a493819128]    self._storage_impl.save_bytes(packing_iter(), overwrite=True, len_hint=len_hint)
+[MFLOG|0|2022-11-01T19:40:23.801212Z|runtime|59e3bc36-a76a-46b6-b828-c56c3e81e44f]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/local_storage.py", line 108, in save_bytes
+[MFLOG|0|2022-11-01T19:40:23.801237Z|runtime|6ecd6ed7-e18f-451a-b7d1-123192826d15]    for path, obj in path_and_bytes_iter:
+[MFLOG|0|2022-11-01T19:40:23.801261Z|runtime|0e30dd9a-2403-42c2-a3bb-9166faf7b3bf]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/content_addressed_store.py", line 78, in packing_iter
+[MFLOG|0|2022-11-01T19:40:23.801285Z|runtime|aeb3f64d-7ff8-4df0-b473-aa50a1aa1c82]    for blob in blob_iter:
+[MFLOG|0|2022-11-01T19:40:23.801313Z|runtime|f1e5d3e5-9350-4732-afd6-2199ba21eb0e]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/datastore/task_datastore.py", line 280, in pickle_iter
+[MFLOG|0|2022-11-01T19:40:23.801337Z|runtime|9cfcfec2-47bb-447a-957b-d75945306bb0]    blob = pickle.dumps(obj, protocol=2)
+[MFLOG|0|2022-11-01T19:40:23.801361Z|runtime|fab8166e-a085-4d0b-b890-0f85064b5a8a]AttributeError: Can't pickle local object 'SummaryTopic.__init__.<locals>.default'
+[MFLOG|0|2022-11-01T19:40:23.801386Z|runtime|45e55577-e782-461a-85f2-f5ba1b5f425a]
+[MFLOG|0|2022-11-01T19:40:23.801411Z|runtime|dffaf86b-edeb-4f59-ad25-c0c6ba339d24]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-01T19:40:24.114162Z|runtime|01bd4a01-14d2-469c-b8d6-4049b6f4741f]COMET INFO: Comet.ml Experiment Summary
+[MFLOG|0|2022-11-01T19:40:24.114480Z|runtime|765d4935-4e43-4b76-bb82-4158a08ba95b]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-01T19:40:24.114613Z|runtime|a71ed678-e4c7-408a-8493-275a778134b3]COMET INFO:   Data:
+[MFLOG|0|2022-11-01T19:40:24.114715Z|runtime|e64a78a0-a176-4f2e-b4a7-9d1511f6d250]COMET INFO:     display_summary_level : 1
+[MFLOG|0|2022-11-01T19:40:24.114815Z|runtime|8f4e1238-5632-4033-9db9-943f3e9c9b06]COMET INFO:     url                   : https://www.comet.com/beuatyblackbear/ss/a9712ca59fd4482f91c6cb1e01e906e4
+[MFLOG|0|2022-11-01T19:40:24.114912Z|runtime|af430b7b-c698-44f7-8626-66938f62399a]COMET INFO:   Uploads:
+[MFLOG|0|2022-11-01T19:40:24.115004Z|runtime|768e7db0-fc42-4458-9283-0ff19d5b399d]COMET INFO:     conda-environment-definition : 1
+[MFLOG|0|2022-11-01T19:40:24.115113Z|runtime|b90a053c-9fab-4051-9852-3d18d366d133]COMET INFO:     conda-info                   : 1
+[MFLOG|0|2022-11-01T19:40:24.115201Z|runtime|78b7d254-c6ba-48f3-885f-cf48393a1dd4]COMET INFO:     conda-specification          : 1
+[MFLOG|0|2022-11-01T19:40:24.115288Z|runtime|e22c33a9-2330-4d37-ba34-0c49a50f066f]COMET INFO:     environment details          : 1
+[MFLOG|0|2022-11-01T19:40:24.115374Z|runtime|11eaea5c-41b8-4d31-96fc-9a24a93b4584]COMET INFO:     filename                     : 1
+[MFLOG|0|2022-11-01T19:40:24.115463Z|runtime|637c0286-8f87-4a39-922e-e2d33841ba78]COMET INFO:     git metadata                 : 1
+[MFLOG|0|2022-11-01T19:40:24.115554Z|runtime|c9b70ad1-5d91-4d4e-9285-ba4cfffc9d50]COMET INFO:     installed packages           : 1
+[MFLOG|0|2022-11-01T19:40:24.115646Z|runtime|98519d54-207f-4d3b-9298-0a4fb9b4b9b7]COMET INFO:     source_code                  : 1 (5.00 KB)
+[MFLOG|0|2022-11-01T19:40:24.115731Z|runtime|9231ae6a-6189-4261-85a2-ee1e14c271a2]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-01T19:40:24.115827Z|runtime|cc60baf3-5b42-470b-a3f4-619b437c56a8]COMET INFO: Uploading metrics, params, and assets to Comet before program termination (may take several seconds)
+[MFLOG|0|2022-11-01T19:40:25.326062Z|runtime|1bdc7ad0-4633-4ab8-8a38-29e266d4bfa8]COMET INFO: The Python SDK has 3600 seconds to finish before aborting...
+[MFLOG|0|2022-11-01T19:40:25.326233Z|runtime|e7f6efab-a6db-4715-8bab-bd8063836a95]COMET INFO: Uploading 1 metrics, params and output messages
+[MFLOG|0|2022-11-01T19:40:25.326797Z|runtime|b49aed9f-ca32-43b8-9fd1-959866c91dc5]Task failed.

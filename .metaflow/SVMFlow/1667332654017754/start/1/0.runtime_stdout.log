@@ -1,0 +1,5 @@
+[MFLOG|0|2022-11-01T19:57:34.039337Z|runtime|eaaa05da-b02c-47f6-82ab-5e899bc7cd1f]Running experiment for project: ss
+[MFLOG|0|2022-11-01T19:57:34.448930Z|runtime|f6773a2c-6651-4573-906c-7df55ae3f413]Starting up at 2022-11-01 19:57:34.448842
+[MFLOG|0|2022-11-01T19:57:41.774973Z|runtime|7d5d4aa3-c3f0-46ae-aafc-890c8aabab64]flow name: SVMFlow
+[MFLOG|0|2022-11-01T19:57:41.775006Z|runtime|05245de5-8f10-4925-895a-dff1e294e8a2]run id: 1667332654017754
+[MFLOG|0|2022-11-01T19:57:41.775029Z|runtime|d4a69fb5-9f49-42ab-8d07-698057c14d6f]username: qinyixin

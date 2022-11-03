@@ -1,0 +1,33 @@
+[MFLOG|0|2022-11-01T20:28:56.272391Z|runtime|cea9f4b7-e3c6-461b-8600-0012b2ce96df]<flow SVMFlow step train_model[0] (input: 100)> failed:
+[MFLOG|0|2022-11-01T20:28:56.277661Z|runtime|ee303950-b0d3-4307-a5f2-9a50b2b59d4d]    Internal error
+[MFLOG|0|2022-11-01T20:28:56.279200Z|runtime|1a9150fd-feda-4b54-a4a8-14a1bcc78bdf]Traceback (most recent call last):
+[MFLOG|0|2022-11-01T20:28:56.475328Z|runtime|2ef6e4d8-a5fd-418f-826d-c893ac86f57b][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2022-11-01T20:28:56.475543Z|runtime|a39d7f8a-deb8-44d3-98f2-d21a3b69ad49]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-11-01T20:28:56.475608Z|runtime|6d577259-ebcb-4233-99e7-76422c179de4]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-11-01T20:28:56.475634Z|runtime|6ca9d6f9-348b-45be-9b89-9a49274ba33a]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-11-01T20:28:56.475658Z|runtime|7e6b5c6d-e467-4046-8e54-142f6d201508]    return self.main(args, kwargs)
+[MFLOG|0|2022-11-01T20:28:56.475680Z|runtime|9d2cfddd-ed81-482e-94c4-ede1cad8bf7c]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-11-01T20:28:56.475703Z|runtime|a49dcaa4-c17c-4d76-bb85-3e7abdacc236]    rv = self.invoke(ctx)
+[MFLOG|0|2022-11-01T20:28:56.475724Z|runtime|07041d0f-a95b-47e5-b356-3bd981bbfaef]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-11-01T20:28:56.475746Z|runtime|f6b6e539-c98e-48a0-9a9d-27798f8683a2]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-11-01T20:28:56.475769Z|runtime|d356d1e0-9298-43f5-9ccc-a9c501ea5f45]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-11-01T20:28:56.475792Z|runtime|48903c8a-b77e-4e1c-bd54-82c2dd308dff]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-11-01T20:28:56.475814Z|runtime|f7ad97fd-2e98-45b6-97c6-9faaad563566]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-11-01T20:28:56.475836Z|runtime|3f8bf276-f1de-46b2-8bb6-7dab276cdac0]    return __callback(args, kwargs)
+[MFLOG|0|2022-11-01T20:28:56.475857Z|runtime|627d646d-250a-4ca1-96e9-8f689b37ce22]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-11-01T20:28:56.475879Z|runtime|de51d49d-9d06-4cdf-bdbf-f44d4671b0c5]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-11-01T20:28:56.475900Z|runtime|5132934f-abb7-4040-b186-13876e5e320e]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-11-01T20:28:56.475922Z|runtime|ef04ab45-1400-491f-8cc7-e0b27f247288]    task.run_step(
+[MFLOG|0|2022-11-01T20:28:56.475944Z|runtime|d494517a-a62c-4b49-8c86-3821999d083b]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 547, in run_step
+[MFLOG|0|2022-11-01T20:28:56.475965Z|runtime|56bebc5d-cf9b-4515-beef-d5a0ef82e029]    self._exec_step_function(step_func)
+[MFLOG|0|2022-11-01T20:28:56.475987Z|runtime|b09a6e69-edfe-4ac0-bbfa-34b68384e687]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 53, in _exec_step_function
+[MFLOG|0|2022-11-01T20:28:56.476009Z|runtime|8a46d80d-ccee-44b7-96e9-b71e76ad57f3]    step_function()
+[MFLOG|0|2022-11-01T20:28:56.476030Z|runtime|8050b952-0d45-44f0-90a0-f82070f498fd]  File "/Users/qinyixin/Desktop/7773_assignement/flow_2.py", line 121, in train_model
+[MFLOG|0|2022-11-01T20:28:56.476051Z|runtime|2fb32570-f0cb-4c31-9414-a2c18953fe55]    reg.fit(self.x_train, self.y_train)
+[MFLOG|0|2022-11-01T20:28:56.476073Z|runtime|b55bf3e9-65ba-4421-b07e-43895d6229e5]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/comet_ml/monkey_patching.py", line 312, in wrapper
+[MFLOG|0|2022-11-01T20:28:56.476094Z|runtime|3f0b3fda-0e9a-441e-b00f-a41bae4fcdbe]    return_value = original(args, kwargs)
+[MFLOG|0|2022-11-01T20:28:56.476115Z|runtime|150b529e-d1c3-498c-91d3-dc3c0e7ef073]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/sklearn/linear_model/_bayes.py", line 233, in fit
+[MFLOG|0|2022-11-01T20:28:56.476137Z|runtime|970105b1-0af2-455e-b3b2-e5b033addb64]    if self.n_iter < 1:
+[MFLOG|0|2022-11-01T20:28:56.476158Z|runtime|92187d6f-a597-476d-b8d7-e6a72cdb3d64]TypeError: '<' not supported between instances of 'builtin_function_or_method' and 'int'
+[MFLOG|0|2022-11-01T20:28:56.476180Z|runtime|40f7a43d-b073-4bbb-99bb-b54d08f2c79e]
+[MFLOG|0|2022-11-01T20:28:56.476295Z|runtime|e9143fd4-caa1-4da2-992e-7f689deb6354]Task failed.

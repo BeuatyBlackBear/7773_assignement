@@ -1,0 +1,30 @@
+[MFLOG|0|2022-11-01T21:00:56.278490Z|runtime|f39db98d-4409-466b-b0d8-b652427d70c8]<flow SampleRegressionFlow step test_model> failed:
+[MFLOG|0|2022-11-01T21:00:56.280912Z|runtime|e7cd1cdb-7f09-4d90-825c-638079993798]    Internal error
+[MFLOG|0|2022-11-01T21:00:56.281359Z|runtime|51adfe84-550d-4f4c-8cee-6748ccbcf2c7]Traceback (most recent call last):
+[MFLOG|0|2022-11-01T21:00:56.281390Z|runtime|fe70f4b6-3699-4f8b-9a11-e0b863922a08]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-11-01T21:00:56.281445Z|runtime|09139a68-fdd3-4da2-8736-476d408c2642]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-11-01T21:00:56.281485Z|runtime|9076359a-bc8e-4c1c-9129-dcb70b42a5a8]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-11-01T21:00:56.281511Z|runtime|23e913d5-d6b8-44b1-a8fc-fa55fa231061]    return self.main(args, kwargs)
+[MFLOG|0|2022-11-01T21:00:56.373828Z|runtime|c815bf00-95f5-420a-9c23-1329ec6623b6]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-11-01T21:00:56.373974Z|runtime|289aa74c-17b7-428d-b902-960073ff5f61]    rv = self.invoke(ctx)
+[MFLOG|0|2022-11-01T21:00:56.374009Z|runtime|d15406e7-113b-4b9b-bc58-aeb0407ab1e1]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-11-01T21:00:56.374033Z|runtime|c6529954-65ac-42ef-a1d2-15189aa7403c]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-11-01T21:00:56.374056Z|runtime|1ae7537e-0c12-46db-ac8e-3aa073756428]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-11-01T21:00:56.374078Z|runtime|a7f6d269-76f8-468b-a684-5e1963df8fd2]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-11-01T21:00:56.374100Z|runtime|1d8d0bfd-7222-4cec-8b64-73b96e01309b]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-11-01T21:00:56.374121Z|runtime|ca97ea13-7294-4449-945c-40f80c0b57c1]    return __callback(args, kwargs)
+[MFLOG|0|2022-11-01T21:00:56.374143Z|runtime|3cb4e272-e322-4b77-9f6e-052a1719e1fa]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-11-01T21:00:56.374168Z|runtime|93084c95-3afe-4293-bfd1-6f22a041bb96]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-11-01T21:00:56.374189Z|runtime|0f57e6ba-6e33-4d7f-9a76-f4ea60560ab6]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-11-01T21:00:56.374210Z|runtime|75580053-907d-49ba-ae1e-3a8f6edbe3fb]    task.run_step(
+[MFLOG|0|2022-11-01T21:00:56.374232Z|runtime|83962a2b-6388-4d53-82a3-cd1a2382ca10]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 545, in run_step
+[MFLOG|0|2022-11-01T21:00:56.374253Z|runtime|e2de028c-1f17-4b05-839a-c141cb90c20c]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2022-11-01T21:00:56.374274Z|runtime|1f293c93-c145-40ea-bc5e-5844c1071030]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 55, in _exec_step_function
+[MFLOG|0|2022-11-01T21:00:56.374300Z|runtime|f10bc8a7-f9f1-4e52-ba95-a10828069b3a]    step_function(input_obj)
+[MFLOG|0|2022-11-01T21:00:56.374321Z|runtime|867cb051-b19b-40ba-91b2-12201f2fc759]  File "/Users/qinyixin/Desktop/7773_assignement/flow_3.py", line 128, in test_model
+[MFLOG|0|2022-11-01T21:00:56.374345Z|runtime|2405dab0-c566-4369-b89d-d534cf1aaa53]    self.y_predicted = Model[0].predict(self.X_test)
+[MFLOG|0|2022-11-01T21:00:56.374367Z|runtime|2991396d-54d6-4f07-b340-dc25474efbd7]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/flowspec.py", line 223, in __getattr__
+[MFLOG|0|2022-11-01T21:00:56.374388Z|runtime|327a970e-867b-43ca-a179-2a45ee5b6c64]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2022-11-01T21:00:56.374410Z|runtime|dfe8450b-6609-468d-9f07-9195848d43d9]AttributeError: Flow SampleRegressionFlow has no attribute 'X_test'
+[MFLOG|0|2022-11-01T21:00:56.374434Z|runtime|bb406369-5b10-4291-8ebe-32ffd5d7aaf5]
+[MFLOG|0|2022-11-01T21:00:56.374884Z|runtime|e0cd6cf4-3e6a-4394-8d15-a15c9540eaff]Task failed.

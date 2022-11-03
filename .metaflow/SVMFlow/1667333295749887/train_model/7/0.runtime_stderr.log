@@ -1,0 +1,35 @@
+[MFLOG|0|2022-11-01T20:08:19.486039Z|runtime|91452049-5db4-470f-b4f5-6979f3a089be]<flow SVMFlow step train_model[1] (input: 1)> failed:
+[MFLOG|0|2022-11-01T20:08:19.491091Z|runtime|b6de4691-4ceb-4aa2-ae79-3c70452de196]    Internal error
+[MFLOG|0|2022-11-01T20:08:19.492307Z|runtime|d072ee12-5971-4367-b86f-508ab6216fa1]Traceback (most recent call last):
+[MFLOG|0|2022-11-01T20:08:19.685040Z|runtime|1ffd8b52-cd4d-4fac-b44d-4f863e425fd5][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2022-11-01T20:08:19.687395Z|runtime|f729fa70-6bd5-4016-89bd-f41d2b166883]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-11-01T20:08:19.687423Z|runtime|a00a5f8e-261b-44fb-b635-02dff5128835]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-11-01T20:08:19.687446Z|runtime|461d9af4-aea7-446c-a777-b6703b00e7df]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-11-01T20:08:19.687468Z|runtime|0ca1ccb2-4e31-4e86-8f28-363f302fe0b0]    return self.main(args, kwargs)
+[MFLOG|0|2022-11-01T20:08:19.687491Z|runtime|c179b908-11c7-4472-9c22-19127b6ea909]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-11-01T20:08:19.687513Z|runtime|c9f9e7ef-df1d-43c6-bd88-135e3355ac76]    rv = self.invoke(ctx)
+[MFLOG|0|2022-11-01T20:08:19.687535Z|runtime|53425603-6007-443a-a5ef-fa7b54325322]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-11-01T20:08:19.687557Z|runtime|c750a4ed-1b60-42f3-80d2-3cc11c540d93]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-11-01T20:08:19.687579Z|runtime|ca51ff4b-0615-4527-ae58-aa6e3582536c]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-11-01T20:08:19.687601Z|runtime|b779e403-920f-445b-8b74-1380b71192e1]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-11-01T20:08:19.687622Z|runtime|219a60fa-6b86-4f47-b7f6-b0746ae583b3]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-11-01T20:08:19.687644Z|runtime|1629b762-75db-4a65-b8d7-837784378eb7]    return __callback(args, kwargs)
+[MFLOG|0|2022-11-01T20:08:19.687666Z|runtime|e9cdf893-c312-4423-b253-1d6c9bfdc47f]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-11-01T20:08:19.687688Z|runtime|fd5a41b9-ed00-4a26-b679-bf1b11e7dd49]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-11-01T20:08:19.687709Z|runtime|e25e9882-b333-4dd2-9c97-3db603c50e4d]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-11-01T20:08:19.687730Z|runtime|24d689b5-bb05-4ebc-b01e-7b6ae99fa885]    task.run_step(
+[MFLOG|0|2022-11-01T20:08:19.687752Z|runtime|6cee07f9-7235-4b55-b26b-9a6713490ba1]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 547, in run_step
+[MFLOG|0|2022-11-01T20:08:19.687773Z|runtime|25096c3c-8045-4663-b019-556b3c12c7ef]    self._exec_step_function(step_func)
+[MFLOG|0|2022-11-01T20:08:19.687795Z|runtime|98097fec-27c8-4983-b605-7f1bdec95c0e]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 53, in _exec_step_function
+[MFLOG|0|2022-11-01T20:08:19.687817Z|runtime|b530b9cd-8973-47d5-bfe6-93d4dcc75be2]    step_function()
+[MFLOG|0|2022-11-01T20:08:19.687838Z|runtime|645ffddc-06c0-4391-915c-fef831c8266f]  File "/Users/qinyixin/Desktop/7773_assignement/flow_2.py", line 121, in train_model
+[MFLOG|0|2022-11-01T20:08:19.687860Z|runtime|cee3d8cb-63c2-4065-ad6d-727a500a0ae1]    reg.fit(self.x_train, self.y_train)
+[MFLOG|0|2022-11-01T20:08:19.687881Z|runtime|06c5e4aa-a078-4f91-85e0-0bf0abf542ce]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/comet_ml/monkey_patching.py", line 312, in wrapper
+[MFLOG|0|2022-11-01T20:08:19.687904Z|runtime|ae763c62-f648-47c2-880c-281f59933607]    return_value = original(args, kwargs)
+[MFLOG|0|2022-11-01T20:08:19.687925Z|runtime|704ca4d3-1564-4995-b4e0-6bac81cc1139]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/sklearn/svm/_classes.py", line 254, in fit
+[MFLOG|0|2022-11-01T20:08:19.687946Z|runtime|28dfc1a6-35a0-453d-b768-6f54f5153bb1]    check_classification_targets(y)
+[MFLOG|0|2022-11-01T20:08:19.687968Z|runtime|6ff5e1c0-99b6-4452-97f0-b752761d517a]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/sklearn/utils/multiclass.py", line 197, in check_classification_targets
+[MFLOG|0|2022-11-01T20:08:19.687989Z|runtime|d8a9373a-cad7-40ce-b0e1-9d7287e2f1fa]    raise ValueError("Unknown label type: %r" % y_type)
+[MFLOG|0|2022-11-01T20:08:19.688012Z|runtime|8e1dfceb-7ce0-4a8d-8974-da125bd0c7f3]ValueError: Unknown label type: 'continuous'
+[MFLOG|0|2022-11-01T20:08:19.688033Z|runtime|0f5129d0-29c3-4fcb-88a2-a77dd6d4d970]
+[MFLOG|0|2022-11-01T20:08:19.688149Z|runtime|fab23b02-683f-46d1-b0d3-5a9411cb38df]Task failed.

@@ -1,0 +1,28 @@
+[MFLOG|0|2022-11-03T00:52:53.879997Z|runtime|e20df0d1-eeba-4ec8-962c-3f8fb9e39f68]<flow BayesridgeFlow step test> failed:
+[MFLOG|0|2022-11-03T00:52:53.883680Z|runtime|1c3ee007-c565-4b96-8119-f234c2813e09]    Internal error
+[MFLOG|0|2022-11-03T00:52:53.884774Z|runtime|d376db2a-208a-4ece-ade1-1143cfec74c6]Traceback (most recent call last):
+[MFLOG|0|2022-11-03T00:52:53.884861Z|runtime|9d47f2f2-9d76-4e62-87b8-fde2bfb36be4]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-11-03T00:52:53.884936Z|runtime|065438b0-9baf-4b57-bd53-82d4edaaf5c6]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-11-03T00:52:53.885000Z|runtime|1084fae8-5738-4465-b27d-79eba2b179d1]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-11-03T00:52:53.885047Z|runtime|70e9c16e-2a7a-4ff1-a14c-ff1de9813bef]    return self.main(args, kwargs)
+[MFLOG|0|2022-11-03T00:52:53.978943Z|runtime|c39c015e-eaaf-4503-8f07-5d94090fd6ae]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-11-03T00:52:53.979077Z|runtime|ad765b1a-7d37-4bd2-87af-34ae52524775]    rv = self.invoke(ctx)
+[MFLOG|0|2022-11-03T00:52:53.979105Z|runtime|b3e8fe36-f196-474a-98b0-0a4e31ff7093]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-11-03T00:52:53.979129Z|runtime|7d258dda-45b2-422b-b411-f0848b56efe7]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-11-03T00:52:53.979151Z|runtime|78d73dbf-28e4-4eba-811a-3c9151e9e74f]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-11-03T00:52:53.979172Z|runtime|e13bf4a5-7050-4485-b129-cb9e18a5b7d3]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-11-03T00:52:53.979193Z|runtime|e3f14d45-5d7f-41c2-a2f9-aef40452f668]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-11-03T00:52:53.979219Z|runtime|1702b0d1-3e7b-4831-841d-039d68bea134]    return __callback(args, kwargs)
+[MFLOG|0|2022-11-03T00:52:53.979240Z|runtime|c610b641-370b-4b2b-b603-0b545439311b]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-11-03T00:52:53.979262Z|runtime|c67d6fd9-aa54-43f3-a715-6011288920fa]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-11-03T00:52:53.979284Z|runtime|0d03280d-f208-4288-b962-6fcec0cd571e]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-11-03T00:52:53.979306Z|runtime|616fbaf7-3cc6-427b-b81e-ba221b9648fe]    task.run_step(
+[MFLOG|0|2022-11-03T00:52:53.979328Z|runtime|3f029974-befb-4ea4-bd5b-e4d3887d6711]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 545, in run_step
+[MFLOG|0|2022-11-03T00:52:53.979350Z|runtime|5e91af69-4291-4fd5-80a0-b9909bbeaa91]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2022-11-03T00:52:53.979395Z|runtime|e1bd0480-7b7c-4429-bc2b-1fd2b3f3ab3f]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 55, in _exec_step_function
+[MFLOG|0|2022-11-03T00:52:53.979443Z|runtime|8b5c6fe1-49b5-43b9-87f5-fc523b25d436]    step_function(input_obj)
+[MFLOG|0|2022-11-03T00:52:53.979471Z|runtime|bda69f03-a4d6-4650-8d34-12091438e7b7]  File "/Users/qinyixin/Desktop/7773_assignement/flow_3.py", line 134, in test
+[MFLOG|0|2022-11-03T00:52:53.979494Z|runtime|7c13e340-e551-4b4d-811c-03a15c076fdd]    self.y_predicted = input.model.predict(input.x_vali)
+[MFLOG|0|2022-11-03T00:52:53.979516Z|runtime|262b828c-832d-4d51-8dc0-4eb6ac55306f]AttributeError: 'builtin_function_or_method' object has no attribute 'model'
+[MFLOG|0|2022-11-03T00:52:53.979546Z|runtime|3758143d-2405-4ba7-8642-09dab21d841c]
+[MFLOG|0|2022-11-03T00:52:53.980010Z|runtime|5a10aa16-f2a9-4c7f-a4fc-834468c558aa]Task failed.

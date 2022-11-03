@@ -1,0 +1,3 @@
+[MFLOG|0|2022-11-01T20:17:29.214870Z|runtime|d4fcb9eb-169e-4742-8bdd-29caf5b7747e]Running experiment for project: ss
+[MFLOG|0|2022-11-01T20:17:29.552402Z|runtime|f44cafac-e12a-4826-932a-547194a8b7c7]MSE is 108.24382712173352, R2 score is 0.7179160605965456
+[MFLOG|0|2022-11-01T20:17:29.552519Z|runtime|5df3f02c-ecc2-4a8a-8e47-c69f77af2698]Test prediction is [164.6676878]

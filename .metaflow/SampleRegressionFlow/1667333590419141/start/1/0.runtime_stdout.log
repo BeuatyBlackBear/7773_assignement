@@ -1,0 +1,5 @@
+[MFLOG|0|2022-11-01T20:13:10.657797Z|runtime|52179bb1-1b96-4d26-b40c-8f9220cf93e0]Running experiment for project: ss
+[MFLOG|0|2022-11-01T20:13:10.856920Z|runtime|2c240678-0f7b-42a3-95ec-04a387d34a40]Starting up at 2022-11-01 20:13:10.856856
+[MFLOG|0|2022-11-01T20:13:10.924017Z|runtime|732b1cc0-67c8-4d7b-9220-c7bdf0edfb45]flow name: SampleRegressionFlow
+[MFLOG|0|2022-11-01T20:13:10.924114Z|runtime|a47aa776-4940-44ae-8fe7-f762c021e15d]run id: 1667333590419141
+[MFLOG|0|2022-11-01T20:13:10.924149Z|runtime|5f8efd6c-be73-4c9b-b938-e84d7ce67027]username: qinyixin

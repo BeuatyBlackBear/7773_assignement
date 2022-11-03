@@ -1,0 +1,1 @@
+{"flow_id": "SVMFlow", "run_number": "1667334532482149", "step_name": "train_model", "task_id": "8", "field_name": "attempt_ok", "type": "internal_attempt_status", "value": "False", "tags": ["attempt_id:0"], "user_name": "qinyixin", "ts_epoch": 1667334536272}

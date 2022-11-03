@@ -1,0 +1,6 @@
+[MFLOG|0|2022-11-03T00:55:33.801944Z|runtime|bcaf2d9b-36af-4f7f-bba4-91c448d8294e]<flow BayesridgeFlow step test> failed:
+[MFLOG|0|2022-11-03T00:55:33.805139Z|runtime|eb534c10-c77b-4327-b02f-ddc4fde087fb]    Missing artifacts in merge:
+[MFLOG|0|2022-11-03T00:55:33.805204Z|runtime|1ea8049a-da00-470d-94cc-48b0fb459b3f]    Step test specifies that [x_train, y_train, X_vali, y_vali, x_test, y_test] should be merged but [X_vali, x_test] are not present.
+[MFLOG|0|2022-11-03T00:55:33.896994Z|runtime|cc725d46-fee9-419f-9eb0-b1865892b29c]    To remedy this issue, make sure that the values specified in only come from at least one branch
+[MFLOG|0|2022-11-03T00:55:33.897204Z|runtime|e41773dd-1d6b-41f5-9aa2-9775de0bc1a1]
+[MFLOG|0|2022-11-03T00:55:33.897660Z|runtime|cc8da472-9882-432b-a937-9204d657ba62]Task failed.

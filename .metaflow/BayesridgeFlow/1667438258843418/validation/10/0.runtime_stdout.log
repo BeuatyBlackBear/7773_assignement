@@ -1,0 +1,2 @@
+[MFLOG|0|2022-11-03T01:17:43.127184Z|runtime|b313eb75-c950-449d-9491-7210f5fd0dc8]Running experiment for project: ss
+[MFLOG|0|2022-11-03T01:17:43.559126Z|runtime|e29dc4d9-e9fa-4cd8-8bc3-2402512e3316]The best model based on MSE has MSE : 105.4282265902797, R2 score : 0.7622205956622459

@@ -1,0 +1,27 @@
+[MFLOG|0|2022-11-03T01:45:57.529661Z|runtime|a759c3ff-cf58-425e-bd55-e51db0144c3b]COMET INFO: Experiment is live on comet.com https://www.comet.com/beuatyblackbear/ss/9fd1bbf8f3dc44e193b4fe5189365533
+[MFLOG|0|2022-11-03T01:46:01.218849Z|runtime|f08265c9-cb37-4708-bc4e-55345c78c473]
+[MFLOG|0|2022-11-03T01:46:01.218969Z|runtime|be5ad5d4-2ad1-456f-b52b-341bb45b3a97]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-03T01:46:01.219005Z|runtime|6561e879-7a0d-46e9-9af3-3c09b20920a7]COMET INFO: Comet.ml Experiment Summary
+[MFLOG|0|2022-11-03T01:46:01.219047Z|runtime|6a09fff5-6c77-415f-85f5-3e3a9b4627d9]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-03T01:46:01.219078Z|runtime|0b1da70f-0531-4772-a733-e19f11a6041f]COMET INFO:   Data:
+[MFLOG|0|2022-11-03T01:46:01.219109Z|runtime|6b6b6e04-f95a-4cd6-9ef8-e64ca75ab465]COMET INFO:     display_summary_level : 1
+[MFLOG|0|2022-11-03T01:46:01.219164Z|runtime|75fdad98-0554-451e-ae2b-32f05624fec8]COMET INFO:     url                   : https://www.comet.com/beuatyblackbear/ss/9fd1bbf8f3dc44e193b4fe5189365533
+[MFLOG|0|2022-11-03T01:46:01.219192Z|runtime|6c482a9e-c97c-4f56-92c5-54e6aacbde8e]COMET INFO:   Metrics:
+[MFLOG|0|2022-11-03T01:46:01.219220Z|runtime|602395a3-572b-4485-9e3d-be14f7a676d3]COMET INFO:     mse : 105.4282265902797
+[MFLOG|0|2022-11-03T01:46:01.219247Z|runtime|f30ed612-d97f-4235-8849-da3376a49286]COMET INFO:     r2  : 0.7622205956622459
+[MFLOG|0|2022-11-03T01:46:01.219278Z|runtime|c7fd4d58-f535-47ea-9637-bc17a7a051b9]COMET INFO:   Others:
+[MFLOG|0|2022-11-03T01:46:01.219303Z|runtime|0bd0981c-e3ff-47b0-8778-5901913a0049]COMET INFO:     Name : bayesridge_results
+[MFLOG|0|2022-11-03T01:46:01.219328Z|runtime|e20e9f87-7aac-40a4-93e7-24b245f3daa4]COMET INFO:   Parameters:
+[MFLOG|0|2022-11-03T01:46:01.219352Z|runtime|8f88676b-a42b-4a67-b701-68bff21dda28]COMET INFO:     N_iter : 200
+[MFLOG|0|2022-11-03T01:46:01.219377Z|runtime|ee3bceda-70fa-40d6-9d81-4095d365ea16]COMET INFO:   Uploads:
+[MFLOG|0|2022-11-03T01:46:01.219402Z|runtime|68464ba5-9f00-42da-a695-9b7edc774261]COMET INFO:     conda-environment-definition : 1
+[MFLOG|0|2022-11-03T01:46:01.219426Z|runtime|f04f703d-ea3e-4a1d-9ba8-be3cdb585a73]COMET INFO:     conda-info                   : 1
+[MFLOG|0|2022-11-03T01:46:01.219450Z|runtime|02574cd5-0c33-4226-8541-a41b84a98e2b]COMET INFO:     conda-specification          : 1
+[MFLOG|0|2022-11-03T01:46:01.219474Z|runtime|c65df131-6165-4c1b-abc5-5cec376bbb7c]COMET INFO:     environment details          : 1
+[MFLOG|0|2022-11-03T01:46:01.219498Z|runtime|5bfd33c0-08f8-4799-b141-b396deea40a6]COMET INFO:     filename                     : 1
+[MFLOG|0|2022-11-03T01:46:01.219523Z|runtime|144f4d8f-a62e-4764-83bb-131166f6dc65]COMET INFO:     git metadata                 : 1
+[MFLOG|0|2022-11-03T01:46:01.219550Z|runtime|4673990b-4fdf-476b-8153-5bcc6f7d79bc]COMET INFO:     installed packages           : 1
+[MFLOG|0|2022-11-03T01:46:01.219574Z|runtime|eac9e068-1363-4e0a-b6da-8a07082fe420]COMET INFO:     source_code                  : 1 (7.05 KB)
+[MFLOG|0|2022-11-03T01:46:01.219600Z|runtime|3db55fd5-0708-463b-8de1-30d4e99c1532]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-03T01:46:01.409278Z|runtime|c8715925-e7b2-408c-9ebc-0d8a9ea74967]COMET INFO: Uploading metrics, params, and assets to Comet before program termination (may take several seconds)
+[MFLOG|0|2022-11-03T01:46:01.409753Z|runtime|d956680a-0c77-4ba7-ab32-2f81d321fb6e]COMET INFO: The Python SDK has 3600 seconds to finish before aborting...
