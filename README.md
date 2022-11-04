@@ -5,7 +5,6 @@
 * `task1` is the folder containing the scripts for task1. You should first got the path ./task1 first;
 - `regression_dataset.txt` is a fake regression dataset to run the code - you can generate another dataset with different parameters or cardinality using the `create_fake_dataset.py` script and use the syntax `python create_fake_dataset.py`;
 * `flow.py` contains the script for task one. To run the script, please use the syntax : `python flow.py run` with the API key.
-*  `hyperparamters.png` contains the screenshot on comet to record the best model's parameter.
 *  `metrics.png` contains the screenshot on comet to record all models and  best model's metrics on validation set (MSE and R2).
 
 ## Task 2:
