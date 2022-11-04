@@ -1,0 +1,51 @@
+[MFLOG|0|2022-11-03T19:16:42.984443Z|runtime|e2b8c423-95b1-4df2-8f1a-2348bb7da271]COMET INFO: Experiment is live on comet.com https://www.comet.com/nyu-fre-7773-2021/general/b91917e569794705948698b7755e8069
+[MFLOG|0|2022-11-03T19:16:42.984616Z|runtime|c4cec761-3751-4cd2-8b05-2326dd9e6163]
+[MFLOG|0|2022-11-03T19:16:42.984656Z|runtime|da315ef7-d799-4e3a-8729-9664d3001af4]<flow SampleRegressionFlow step join> failed:
+[MFLOG|0|2022-11-03T19:16:43.003809Z|runtime|870995b0-a3d9-4cb2-a29c-2a3e97b4c9da]    Internal error
+[MFLOG|0|2022-11-03T19:16:43.004207Z|runtime|e8010a76-6f45-43f0-93bc-af2320691fb5]Traceback (most recent call last):
+[MFLOG|0|2022-11-03T19:16:43.004277Z|runtime|7ada2ec6-4774-4e2d-a8de-613c26ec0e82]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1110, in main
+[MFLOG|0|2022-11-03T19:16:43.004315Z|runtime|43a0812a-ceaf-43dc-86a1-85762c1554f3]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2022-11-03T19:16:43.004343Z|runtime|cdc4ec8d-2509-462a-82df-1b3a9588bdef]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-11-03T19:16:43.004376Z|runtime|639828b3-1357-486c-a136-c713e72e79a6]    return self.main(args, kwargs)
+[MFLOG|0|2022-11-03T19:16:43.004494Z|runtime|97ced10c-762a-4bb3-a6ab-6444e76f347f]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-11-03T19:16:43.004573Z|runtime|0de14b5c-f3b9-4bc8-9a3b-3669f9999487]    rv = self.invoke(ctx)
+[MFLOG|0|2022-11-03T19:16:43.004611Z|runtime|6027ea1e-ca8a-4904-a5cd-ba26996e3d04]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-11-03T19:16:43.004641Z|runtime|15f95add-1df2-4686-bb38-7608b28d8078]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-11-03T19:16:43.004668Z|runtime|05248acd-1fa9-4e7a-a3ae-c690d15a8e1c]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-11-03T19:16:43.004697Z|runtime|a392a61e-cb77-4d75-a938-1c45ec38a7f9]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2022-11-03T19:16:43.004723Z|runtime|8d8d41b0-bc8e-4e32-85d6-c2fbd434abcf]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-11-03T19:16:43.004752Z|runtime|0bce8c6a-af06-437d-838e-6014fab5ce3c]    return __callback(args, kwargs)
+[MFLOG|0|2022-11-03T19:16:43.004778Z|runtime|48a658e1-cdf7-49d2-92bb-52d0020b4b14]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+[MFLOG|0|2022-11-03T19:16:43.004803Z|runtime|8cc07e40-8230-435a-b291-5cebcd64d919]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2022-11-03T19:16:43.004827Z|runtime|37a75ce0-29c0-43c4-b2f2-cbb81e10ee92]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 544, in step
+[MFLOG|0|2022-11-03T19:16:43.004852Z|runtime|9a107708-09fa-4b52-8119-427190005af0]    task.run_step(
+[MFLOG|0|2022-11-03T19:16:43.004878Z|runtime|622b080b-d79d-4181-9934-bbd46b905c5c]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 545, in run_step
+[MFLOG|0|2022-11-03T19:16:43.004906Z|runtime|54681e27-0df5-4a07-8832-de3af5a302b2]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2022-11-03T19:16:43.004931Z|runtime|4ab626d0-a154-4f61-9910-1a1bfe19c361]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 55, in _exec_step_function
+[MFLOG|0|2022-11-03T19:16:43.004958Z|runtime|9ef76a04-952a-491a-a860-e708d301a074]    step_function(input_obj)
+[MFLOG|0|2022-11-03T19:16:43.004983Z|runtime|cc9508b0-01f9-4179-9e31-a0216e94a911]  File "/Users/qinyixin/Desktop/7773_assignement/join.py", line 200, in join
+[MFLOG|0|2022-11-03T19:16:43.005038Z|runtime|247db384-9bc7-4e27-a1c1-8e70d812babc]    exp.log_metrics(self.validation_statistic)
+[MFLOG|0|2022-11-03T19:16:43.005087Z|runtime|1ed9eef2-4917-41da-adf1-9a87fb46ca91]  File "/Users/qinyixin/opt/anaconda3/lib/python3.9/site-packages/metaflow/flowspec.py", line 223, in __getattr__
+[MFLOG|0|2022-11-03T19:16:43.005121Z|runtime|41764900-8930-4eb7-8568-a01813472524]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2022-11-03T19:16:43.005150Z|runtime|1d40a937-c47e-474d-8d4b-6e6610b79a9b]AttributeError: Flow SampleRegressionFlow has no attribute 'validation_statistic'
+[MFLOG|0|2022-11-03T19:16:43.005178Z|runtime|1b60c1f9-6c24-4411-8740-11746dab00bc]
+[MFLOG|0|2022-11-03T19:16:52.092440Z|runtime|ebffb98a-3ada-45b9-9954-0ebc9a802160]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-03T19:16:52.093041Z|runtime|5c4f47c2-4e64-4726-98b7-574724c1c0d4]COMET INFO: Comet.ml Experiment Summary
+[MFLOG|0|2022-11-03T19:16:52.093138Z|runtime|f8d9ddd1-6a23-4a53-984f-0c137c404808]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-03T19:16:52.093177Z|runtime|3585153e-6849-43fd-a2c8-c4b3e3feab41]COMET INFO:   Data:
+[MFLOG|0|2022-11-03T19:16:52.093207Z|runtime|058997e7-9f7e-4aa6-a25c-dff1fec93023]COMET INFO:     display_summary_level : 1
+[MFLOG|0|2022-11-03T19:16:52.742977Z|runtime|f793fae5-c125-4a6e-bebf-2c37308ee851]COMET INFO:     url                   : https://www.comet.com/nyu-fre-7773-2021/general/b91917e569794705948698b7755e8069
+[MFLOG|0|2022-11-03T19:16:52.743935Z|runtime|18f1fd9d-e52a-463c-8202-9e7fbecb8884]COMET INFO:   Uploads:
+[MFLOG|0|2022-11-03T19:16:52.744160Z|runtime|9c2d24a3-d444-4db0-ade6-37523b7d39d9]COMET INFO:     conda-environment-definition : 1
+[MFLOG|0|2022-11-03T19:16:52.744356Z|runtime|abf412af-e828-4f0a-a79f-e5702debf1b7]COMET INFO:     conda-info                   : 1
+[MFLOG|0|2022-11-03T19:16:52.744542Z|runtime|7e50613c-9a33-4508-a9ed-7ec3c4aeb84a]COMET INFO:     conda-specification          : 1
+[MFLOG|0|2022-11-03T19:16:52.744726Z|runtime|cc672e13-bdce-45a6-86c5-cb1798239181]COMET INFO:     environment details          : 1
+[MFLOG|0|2022-11-03T19:16:52.744913Z|runtime|0dc06cb6-8feb-4ae0-bce4-8e8809ca68ee]COMET INFO:     filename                     : 1
+[MFLOG|0|2022-11-03T19:16:52.745096Z|runtime|91c52ca1-3eef-4ca0-9954-7234cfea95a8]COMET INFO:     git metadata                 : 1
+[MFLOG|0|2022-11-03T19:16:52.745281Z|runtime|e7bdf092-7142-4ac5-b025-4e8806ce2648]COMET INFO:     git-patch (uncompressed)     : 1 (329 bytes)
+[MFLOG|0|2022-11-03T19:16:52.745416Z|runtime|200eb8c8-76a3-4c99-aaa3-85932dd6044b]COMET INFO:     installed packages           : 1
+[MFLOG|0|2022-11-03T19:16:52.745549Z|runtime|bfdbbc41-11c0-47b3-9aea-13c396de2254]COMET INFO:     source_code                  : 1 (7.11 KB)
+[MFLOG|0|2022-11-03T19:16:52.745681Z|runtime|1ee2f8de-a996-4474-80f0-1629e01147f5]COMET INFO: ---------------------------
+[MFLOG|0|2022-11-03T19:16:52.745827Z|runtime|f29813bd-6665-4aec-bd18-724b85084cca]COMET INFO: Uploading metrics, params, and assets to Comet before program termination (may take several seconds)
+[MFLOG|0|2022-11-03T19:16:54.023741Z|runtime|0f483754-c17f-4efa-9899-785bdc053daa]COMET INFO: The Python SDK has 3600 seconds to finish before aborting...
+[MFLOG|0|2022-11-03T19:16:54.024526Z|runtime|391b11e7-1b7c-47ed-82e2-a6196e9af3e9]Task failed.

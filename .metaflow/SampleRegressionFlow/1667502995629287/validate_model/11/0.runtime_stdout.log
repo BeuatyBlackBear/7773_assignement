@@ -1,0 +1,2 @@
+[MFLOG|0|2022-11-03T19:16:39.783371Z|runtime|8599276d-9337-4bd1-93cc-ebce7a2a34f6]Running experiment for project: general
+[MFLOG|0|2022-11-03T19:16:40.729162Z|runtime|bbe0d295-ec4c-41d0-80ae-0d1849aef395]Validation MSE is 93.82154017016768, R2 score is 0.7490820554151154

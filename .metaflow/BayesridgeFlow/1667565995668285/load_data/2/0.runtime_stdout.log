@@ -1,0 +1,3 @@
+[MFLOG|0|2022-11-04T12:46:36.694779Z|runtime|dfab37fd-308a-4479-b5f4-e79b7afa3ae9]Running experiment for project: yq2240
+[MFLOG|0|2022-11-04T12:46:36.959196Z|runtime|6bd00c74-d192-4641-bbba-1d65f2f3f022]Total of 1000 rows in the dataset!
+[MFLOG|0|2022-11-04T12:46:36.959878Z|runtime|71d70b33-4faa-43e7-b8d7-4615bd6ee854]Raw data: -1.7587394864231143	-32.770386047959725, cleaned data: [-1.7587394864231143, -32.770386047959725]
