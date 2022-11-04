@@ -1,5 +1,6 @@
 # 7773_assignement
 - The website on github is :https://github.com/BeuatyBlackBear/7773_assignement
+- The comet link is https://www.comet.com/beuatyblackbear/yq2240/dab73ec6fa1d44669b7b119228d19d62?experiment-tab=chart&showOutliers=true&smoothing=0&transformY=smoothing&xAxis=wall.
 * `requirements.txt` holds the Python dependencies required for running the scripts.
 ## Task 1:
 * `task1` is the folder containing the scripts for task1. You should first got the path ./task1 first;
